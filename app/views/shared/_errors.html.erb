@@ -1,0 +1,10 @@
+<% if object.errors.any? %>
+  <div class="alert alert-danger">
+    The form contain <%= object.errors.count, "errors" %>
+  </div>
+
+  <ul>
+    <%= object.errors.full_messages %>
+    <% end %>
+  </ul>
+<% end %>
